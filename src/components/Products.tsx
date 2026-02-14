@@ -20,7 +20,7 @@ const products: Product[] = [
     description:
       "Professional multi-mode audio analyzer with 12+ visualization modes: spectrogram, oscilloscope, vectorscope, phase correlation, spectrum analyzer, stereo balance, dynamic range, loudness histogram & more.",
     image: oculoThumb,
-    tags: ["Analyzer", "VST3", "AU", "Standalone"],
+    tags: ["Analyzer", "VST3", "AU"],
     url: "https://beowulfaudio.gumroad.com/l/oculo",
     price: "Free",
     source: "gumroad",
