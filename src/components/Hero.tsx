@@ -22,22 +22,6 @@ const Hero = () => {
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
           Free, powerful audio plugins for producers and engineers. VST3, AU, and standalone tools built with precision.
         </p>
-        <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-up" style={{ animationDelay: "0.6s" }}>
-          <a
-            href="#products"
-            className="inline-flex items-center justify-center px-8 py-3 rounded-lg bg-primary text-primary-foreground font-semibold hover:opacity-90 transition-all glow-primary"
-          >
-            Explore Plugins
-          </a>
-          <a
-            href="https://beowulfaudio.gumroad.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center justify-center px-8 py-3 rounded-lg border border-glow text-foreground font-semibold hover:bg-secondary transition-all"
-          >
-            Visit Gumroad →
-          </a>
-        </div>
       </div>
 
       {/* Scroll indicator */}
