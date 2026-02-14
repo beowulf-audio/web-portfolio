@@ -6,7 +6,7 @@ const Footer = () => {
       <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
         <div>
           <p className="text-lg font-bold text-foreground">Beowulf Audio</p>
-          <p className="text-sm text-muted-foreground">Free audio plugins, built with precision.</p>
+          <p className="text-sm text-muted-foreground">Free audio software, built with precision.</p>
         </div>
         <div className="flex items-center gap-6">
           <a
