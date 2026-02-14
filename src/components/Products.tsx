@@ -18,7 +18,7 @@ const products: Product[] = [
   {
     name: "Oculo",
     description:
-      "Professional multi-mode audio analyzer with 12+ visualization modes: spectrogram, oscilloscope, vectorscope, phase correlation, spectrum analyzer, stereo balance, dynamic range, loudness histogram & more.",
+      "Professional multi-mode audio analyzer plugin featuring 12+ visualization modes: spectrogram, oscilloscope, vectorscope, phase correlation, spectrum analyzer, stereo balance, dynamic range, loudness histogram & more. VST3/AU/Standalone. Built with JUCE. Essential tool for mixing, mastering and vibing.",
     image: oculoThumb,
     tags: ["Analyzer", "VST3", "AU"],
     url: "https://beowulfaudio.gumroad.com/l/oculo",
@@ -28,7 +28,7 @@ const products: Product[] = [
   {
     name: "Pole",
     description:
-      "Sculpt your sound with precision pole-based filtering. A versatile filter plugin designed for creative sound design and mixing applications.",
+      "A sequenced filter effect inspired by German producer Pole, who built his signature minimal-dub sound around a broken Waldorf 4-Pole analog filter. A multimode resonant filter driven by a 16-step sequencer, layered with crackle generation, LFO modulation, and dub effects.",
     image: poleFilterThumb,
     tags: ["Filter", "VST3", "AU"],
     url: "https://beowulfaudio.gumroad.com/l/pole",
@@ -48,7 +48,7 @@ const products: Product[] = [
   {
     name: "ambient-gen",
     description:
-      "Generate ambient music right from your terminal. Features Japanese pentatonic scales, five layered instruments, audio effects, and export to MIDI & MP3. Beautiful TUI with zero configuration.",
+      "Create lush, generative ambient music with spacey textures in your terminal. Features Japanese pentatonic scales, five layered instruments, audio effects, multiple soundfonts, and export to MIDI & MP3.",
     image: ambientgenThumb,
     tags: ["Python", "TUI", "Open Source", "MIT"],
     url: "https://github.com/beowulf-audio/ambient-gen-tui",
