@@ -25,7 +25,7 @@ const About = () => {
 
         <div className="space-y-6 text-muted-foreground leading-relaxed opacity-0 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
           <p>
-            Beowulf Audio is a one-person project by <span className="text-foreground font-semibold">JBV</span>.
+            Beowulf Audio is an audio software company started in 2025 by <span className="text-foreground font-semibold">JBV</span>.
           </p>
           <p>
             Building tools for musicians, producers, and sound designers. 
