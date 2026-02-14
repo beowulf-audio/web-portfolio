@@ -25,11 +25,11 @@ const About = () => {
 
         <div className="space-y-6 text-muted-foreground leading-relaxed opacity-0 animate-fade-in-up" style={{ animationDelay: "0.3s" }}>
           <p>
-            All software by <span className="text-foreground font-semibold">JBV</span>.
+            Beowulf Audio is a one-person project by <span className="text-foreground font-semibold">JBV</span>.
           </p>
           <p>
-            Beowulf Audio builds tools for musicians, producers, and sound designers. 
-            Everything is crafted with care — from the DSP to the interface — with a 
+            Building tools for musicians, producers, and sound designers. 
+            Everything is crafted with care, from the DSP to the interface, with a 
             focus on usability and creative expression.
           </p>
           <p>
