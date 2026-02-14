@@ -36,8 +36,8 @@
 
     --radius: 0.75rem;
 
-    --glow-primary: 0 0 40px hsl(152 80% 45% / 0.15);
-    --glow-accent: 0 0 40px hsl(175 70% 40% / 0.15);
+    --glow-primary: 0 0 20px hsl(152 80% 45% / 0.06);
+    --glow-accent: 0 0 20px hsl(175 70% 40% / 0.06);
 
     --sidebar-background: 160 8% 6%;
     --sidebar-foreground: 150 20% 92%;
