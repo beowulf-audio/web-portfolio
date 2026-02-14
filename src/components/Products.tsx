@@ -79,11 +79,11 @@ const Products = () => {
               rel="noopener noreferrer"
               className="group block rounded-xl overflow-hidden bg-gradient-card border border-border hover:border-glow transition-all duration-300 hover:glow-primary"
             >
-              <div className="aspect-[4/3] overflow-hidden">
+              <div className="aspect-[4/3] overflow-hidden bg-black/40 flex items-center justify-center">
                 <img
                   src={product.image}
                   alt={product.name}
-                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                  className="max-w-full max-h-full object-contain group-hover:scale-105 transition-transform duration-500"
                 />
               </div>
               <div className="p-6">
