@@ -46,7 +46,7 @@ const products: Product[] = [
     source: "gumroad",
   },
   {
-    name: "Ambient Gen TUI",
+    name: "ambient-gen",
     description:
       "Generate ambient music right from your terminal. Features Japanese pentatonic scales, five layered instruments, audio effects, and export to MIDI & MP3. Beautiful TUI with zero configuration.",
     image: ambientgenThumb,
