@@ -1,4 +1,5 @@
 import { Github } from "lucide-react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -9,6 +10,12 @@ const Footer = () => {
           <p className="text-sm text-muted-foreground">Audio software, built with precision.</p>
         </div>
         <div className="flex items-center gap-6">
+          <Link
+            to="/about"
+            className="text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
+          >
+            About
+          </Link>
           <a
             href="https://github.com/beowulf-audio"
             target="_blank"
