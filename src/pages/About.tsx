@@ -32,28 +32,6 @@ const About = () => {
             Everything is crafted with care, from the DSP to the interface, with a 
             focus on usability and creative expression.
           </p>
-          <p>
-            Built with <span className="text-foreground">JUCE</span>, <span className="text-foreground">C++</span>, and <span className="text-foreground">Python</span>.
-          </p>
-        </div>
-
-        <div className="mt-12 flex justify-center gap-6 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.5s" }}>
-          <a
-            href="https://github.com/beowulf-audio"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://beowulfaudio.gumroad.com/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-sm text-muted-foreground hover:text-primary transition-colors font-mono"
-          >
-            Gumroad
-          </a>
         </div>
       </div>
     </div>
