@@ -26,22 +26,22 @@ const products: Product[] = [
     source: "gumroad",
   },
   {
-    name: "Pole Filter",
+    name: "Pole",
     description:
       "Sculpt your sound with precision pole-based filtering. A versatile filter plugin designed for creative sound design and mixing applications.",
     image: poleFilterThumb,
     tags: ["Filter", "VST3", "AU"],
-    url: "https://beowulfaudio.gumroad.com/",
+    url: "https://beowulfaudio.gumroad.com/l/pole",
     price: "Free",
     source: "gumroad",
   },
   {
-    name: "Skald Midi Generator",
+    name: "Skald",
     description:
       "Generate MIDI patterns and melodies with an intuitive, creative approach. Perfect for sparking new ideas and breaking out of compositional ruts.",
     image: skaldThumb,
     tags: ["MIDI", "Generator", "VST3"],
-    url: "https://beowulfaudio.gumroad.com/",
+    url: "https://beowulfaudio.gumroad.com/l/skald",
     price: "Free",
     source: "gumroad",
   },
