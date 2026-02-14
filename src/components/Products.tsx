@@ -87,18 +87,9 @@ const Products = () => {
                 />
               </div>
               <div className="p-6">
-                <div className="flex items-center justify-between mb-3">
-                  <h3 className="text-xl font-bold text-foreground group-hover:text-gradient-primary transition-colors">
-                    {product.name}
-                  </h3>
-                  <span className={`text-xs font-mono px-3 py-1 rounded-full border ${
-                    product.source === "github"
-                      ? "bg-accent/10 text-accent border-accent/20"
-                      : "bg-primary/10 text-primary border-primary/20"
-                  }`}>
-                    {product.price}
-                  </span>
-                </div>
+                <h3 className="text-xl font-bold text-foreground group-hover:text-gradient-primary transition-colors mb-3">
+                  {product.name}
+                </h3>
                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                   {product.description}
                 </p>
@@ -116,7 +107,7 @@ const Products = () => {
                   {product.source === "github" ? (
                     <>View on GitHub <Github className="w-3.5 h-3.5" /></>
                   ) : (
-                    <>Get on Gumroad <ExternalLink className="w-3.5 h-3.5" /></>
+                    <>Download <ExternalLink className="w-3.5 h-3.5" /></>
                   )}
                 </div>
               </div>
