@@ -42,7 +42,7 @@ const products: Product[] = [
       "A generative MIDI sequencer inspired by Quintron's Drum Buddy and Playtonica's Orbita. Place notes on concentric rings, scratch like vinyl, and explore generative patterns with motor control and probability. Features turntable control, scale & key shaping, velocity & gate time, and reverse playback.",
     image: skaldThumb,
     tags: ["MIDI", "Generator", "VST3"],
-    url: "https://beowulfaudio.gumroad.com/l/mgdzy",
+    url: "https://beowulfaudio.gumroad.com/l/skald",
     price: "Free",
     source: "gumroad",
   },
