@@ -12,6 +12,7 @@ type Product = {
   url: string;
   price: string;
   source: "gumroad" | "github";
+  installCmd?: string;
 };
 
 const products: Product[] = [
@@ -48,7 +49,8 @@ const products: Product[] = [
   {
     name: "ambient-gen",
     description:
-      "Create lush, generative ambient music with spacey textures in your terminal. Features Japanese pentatonic scales, five layered instruments, audio effects, multiple soundfonts, and export to MIDI & MP3. Install with pip install ambient-gen.",
+      "Create lush, generative ambient music with spacey textures in your terminal. Features Japanese pentatonic scales, five layered instruments, audio effects, multiple soundfonts, and export to MIDI & MP3.",
+    installCmd: "pip install ambient-gen",
     image: ambientgenThumb,
     tags: ["Python", "TUI", "Open Source", "MIT"],
     url: "https://github.com/beowulf-audio/ambient-gen-tui",
@@ -93,6 +95,11 @@ const Products = () => {
                 <p className="text-sm text-muted-foreground mb-4 leading-relaxed">
                   {product.description}
                 </p>
+                {product.installCmd && (
+                  <code className="block text-xs font-mono bg-black/50 text-primary px-3 py-2 rounded mb-4 border border-primary/20">
+                    $ {product.installCmd}
+                  </code>
+                )}
                 <div className="flex flex-wrap gap-2 mb-4">
                   {product.tags.map((tag) => (
                     <span
