@@ -20,7 +20,7 @@ const Hero = () => {
           <span className="text-foreground">Audio</span>
         </h1>
         <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10 opacity-0 animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-          Free, powerful audio plugins for producers and engineers. VST3, AU, and standalone tools built with precision.
+          Powerful audio software for producers and engineers. VST3, AU, and standalone tools built with precision.
         </p>
       </div>
 
