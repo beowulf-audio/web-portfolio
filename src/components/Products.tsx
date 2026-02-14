@@ -48,7 +48,7 @@ const products: Product[] = [
   {
     name: "ambient-gen",
     description:
-      "Create lush, generative ambient music with spacey textures in your terminal. Features Japanese pentatonic scales, five layered instruments, audio effects, multiple soundfonts, and export to MIDI & MP3.",
+      "Create lush, generative ambient music with spacey textures in your terminal. Features Japanese pentatonic scales, five layered instruments, audio effects, multiple soundfonts, and export to MIDI & MP3. Install with pip install ambient-gen.",
     image: ambientgenThumb,
     tags: ["Python", "TUI", "Open Source", "MIT"],
     url: "https://github.com/beowulf-audio/ambient-gen-tui",
