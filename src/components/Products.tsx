@@ -39,10 +39,10 @@ const products: Product[] = [
   {
     name: "Skald",
     description:
-      "Generate MIDI patterns and melodies with an intuitive, creative approach. Features configurable scale modes, adjustable note density and velocity, and real-time pattern generation. Perfect for sparking new ideas and breaking out of compositional ruts.",
+      "A generative MIDI sequencer inspired by Quintron's Drum Buddy and Playtonica's Orbita. Place notes on concentric rings, scratch like vinyl, and explore generative patterns with motor control and probability. Features turntable control, scale & key shaping, velocity & gate time, and reverse playback.",
     image: skaldThumb,
     tags: ["MIDI", "Generator", "VST3"],
-    url: "https://beowulfaudio.gumroad.com/l/skald",
+    url: "https://beowulfaudio.gumroad.com/l/mgdzy",
     price: "Free",
     source: "gumroad",
   },
