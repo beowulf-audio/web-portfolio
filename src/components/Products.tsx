@@ -1,7 +1,7 @@
 import oculoThumb from "@/assets/oculo-thumb.jpg";
-import poleFilterThumb from "@/assets/polefilter-thumb.jpg";
-import skaldThumb from "@/assets/skald-thumb.jpg";
-import ambientgenThumb from "@/assets/ambientgen-thumb.jpg";
+import poleFilterThumb from "@/assets/store-thumb-2.jpg";
+import skaldThumb from "@/assets/store-thumb-3.jpg";
+import ambientgenThumb from "@/assets/ambientgen-thumb.png";
 import { ExternalLink, Github } from "lucide-react";
 
 type Product = {
