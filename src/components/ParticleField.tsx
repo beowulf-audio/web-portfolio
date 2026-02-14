@@ -42,8 +42,8 @@ const ParticleField = () => {
       particlesRef.current = Array.from({ length: PARTICLE_COUNT }, () => ({
         x: Math.random() * w,
         y: Math.random() * h,
-        vx: (Math.random() - 0.5) * 0.4,
-        vy: (Math.random() - 0.5) * 0.4,
+        vx: (Math.random() - 0.5) * 1.5,
+        vy: (Math.random() - 0.5) * 1.5,
         radius: Math.random() * 2 + 0.5,
         opacity: Math.random() * 0.5 + 0.2,
         pulseSpeed: Math.random() * 0.02 + 0.005,
@@ -72,9 +72,22 @@ const ParticleField = () => {
           p.vy += (dy / dist) * force * 0.3;
         }
 
-        // Damping
-        p.vx *= 0.98;
-        p.vy *= 0.98;
+        // Gentle drift force to keep things moving
+        const t = timeRef.current * 0.001;
+        p.vx += Math.sin(t + p.pulseOffset) * 0.01;
+        p.vy += Math.cos(t * 0.7 + p.pulseOffset) * 0.01;
+
+        // Clamp speed
+        const speed = Math.sqrt(p.vx * p.vx + p.vy * p.vy);
+        const maxSpeed = 1.5;
+        const minSpeed = 0.3;
+        if (speed > maxSpeed) {
+          p.vx = (p.vx / speed) * maxSpeed;
+          p.vy = (p.vy / speed) * maxSpeed;
+        } else if (speed < minSpeed) {
+          p.vx = (p.vx / (speed || 1)) * minSpeed;
+          p.vy = (p.vy / (speed || 1)) * minSpeed;
+        }
 
         p.x += p.vx;
         p.y += p.vy;
