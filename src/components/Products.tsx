@@ -1,6 +1,7 @@
 import oculoThumb from "@/assets/oculo-thumb.jpg";
 import poleFilterThumb from "@/assets/store-thumb-2.jpg";
 import skaldThumb from "@/assets/skald-thumb.png";
+import romplerThumb from "@/assets/rompler-thumb.png";
 import ambientgenThumb from "@/assets/ambientgen-thumb.png";
 import { ExternalLink, Github } from "lucide-react";
 
@@ -43,6 +44,16 @@ const products: Product[] = [
     image: skaldThumb,
     tags: ["MIDI", "Generator", "VST3"],
     url: "https://beowulfaudio.gumroad.com/l/skald",
+    price: "Free",
+    source: "gumroad",
+  },
+  {
+    name: "ROM Sampler",
+    description:
+      "A professional rompler inspired by classic 90s hardware like the Roland JV-1080, E-mu Proteus, and Korg M1. Features 189 sample categories, 3 LFOs, modulation matrix, arpeggiator, and comprehensive effects (chorus, reverb, delay, phaser). Real-time spectrum analyzer and tempo-synced modulation.",
+    image: romplerThumb,
+    tags: ["Sampler", "Rompler", "VST3", "AU"],
+    url: "https://beowulfaudio.gumroad.com/l/rompler",
     price: "Free",
     source: "gumroad",
   },
