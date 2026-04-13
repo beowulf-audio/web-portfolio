@@ -3,6 +3,7 @@ import poleFilterThumb from "@/assets/store-thumb-2.jpg";
 import skaldThumb from "@/assets/skald-thumb.png";
 import romplerThumb from "@/assets/rompler-thumb.png";
 import ambientgenThumb from "@/assets/ambientgen-thumb.png";
+import stemmyThumb from "@/assets/stemmy-thumb.png";
 import { ExternalLink, Github } from "lucide-react";
 
 type Product = {
@@ -55,6 +56,16 @@ const products: Product[] = [
     tags: ["Sampler", "Rompler", "VST3", "AU"],
     url: "https://beowulfaudio.gumroad.com/l/rompler",
     price: "Free",
+    source: "gumroad",
+  },
+  {
+    name: "Stemmy",
+    description:
+      "AI audio stem separator standalone app for macOS. Drop any song and get isolated vocals, drums, bass, guitar, piano, and more — powered by Demucs with Metal GPU acceleration. Built-in multitrack mixer with per-channel EQ, pan, solo, mute. 100% offline, no account, no subscription. Apple Silicon only.",
+    image: stemmyThumb,
+    tags: ["Stem Separator", "AI", "macOS", "Standalone"],
+    url: "https://beowulfaudio.gumroad.com/l/stemmy",
+    price: "Paid",
     source: "gumroad",
   },
   {
