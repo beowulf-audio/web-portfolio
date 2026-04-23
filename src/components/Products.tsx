@@ -1,3 +1,4 @@
+import { useState } from "react";
 import oculoThumb from "@/assets/oculo-thumb.jpg";
 import poleFilterThumb from "@/assets/store-thumb-2.jpg";
 import skaldThumb from "@/assets/skald-thumb.png";
@@ -6,6 +7,9 @@ import romplerThumb from "@/assets/rompler-thumb.png";
 import ambientgenThumb from "@/assets/ambientgen-thumb.png";
 import stemmyThumb from "@/assets/stemmy-thumb.png";
 import { ExternalLink, Github } from "lucide-react";
+import { cn } from "@/lib/utils";
+
+type Category = "MIDI" | "Effects" | "Instruments" | "Utilities";
 
 type Product = {
   name: string;
@@ -15,8 +19,17 @@ type Product = {
   url: string;
   price: string;
   source: "gumroad" | "github";
+  category: Category;
   installCmd?: string;
 };
+
+const CATEGORIES: readonly ("All" | Category)[] = [
+  "All",
+  "MIDI",
+  "Effects",
+  "Instruments",
+  "Utilities",
+] as const;
 
 const products: Product[] = [
   {
@@ -28,6 +41,7 @@ const products: Product[] = [
     url: "https://beowulfaudio.gumroad.com/l/oculo",
     price: "Free",
     source: "gumroad",
+    category: "Utilities",
   },
   {
     name: "Pole",
@@ -38,6 +52,7 @@ const products: Product[] = [
     url: "https://beowulfaudio.gumroad.com/l/pole",
     price: "Free",
     source: "gumroad",
+    category: "Effects",
   },
   {
     name: "Skald",
@@ -48,6 +63,7 @@ const products: Product[] = [
     url: "https://beowulfaudio.gumroad.com/l/skald",
     price: "Free",
     source: "gumroad",
+    category: "MIDI",
   },
   {
     name: "Voce",
@@ -58,6 +74,7 @@ const products: Product[] = [
     url: "https://beowulfaudio.gumroad.com/l/voce",
     price: "Free",
     source: "gumroad",
+    category: "MIDI",
   },
   {
     name: "ROM Sampler",
@@ -68,6 +85,7 @@ const products: Product[] = [
     url: "https://beowulfaudio.gumroad.com/l/rompler",
     price: "Free",
     source: "gumroad",
+    category: "Instruments",
   },
   {
     name: "Stemmy",
@@ -78,6 +96,7 @@ const products: Product[] = [
     url: "https://beowulfaudio.gumroad.com/l/stemmy",
     price: "Paid",
     source: "gumroad",
+    category: "Utilities",
   },
   {
     name: "ambient-gen",
@@ -89,14 +108,22 @@ const products: Product[] = [
     url: "https://github.com/beowulf-audio/ambient-gen-tui",
     price: "Open Source",
     source: "github",
+    category: "MIDI",
   },
 ];
 
 const Products = () => {
+  const [activeCategory, setActiveCategory] = useState<"All" | Category>("All");
+
+  const filteredProducts =
+    activeCategory === "All"
+      ? products
+      : products.filter((p) => p.category === activeCategory);
+
   return (
     <section id="products" className="py-24 px-6">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-12">
           <p className="text-sm font-mono tracking-[0.3em] uppercase text-primary mb-3">
             Plugins & Tools
           </p>
@@ -105,8 +132,28 @@ const Products = () => {
           </h2>
         </div>
 
+        <div className="flex flex-wrap justify-center gap-2 mb-12">
+          {CATEGORIES.map((category) => {
+            const isActive = activeCategory === category;
+            return (
+              <button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                className={cn(
+                  "text-xs font-mono tracking-wider uppercase px-4 py-2 rounded-full border transition-all duration-300",
+                  isActive
+                    ? "bg-primary text-primary-foreground border-primary glow-primary"
+                    : "bg-secondary text-secondary-foreground border-border hover:border-primary/40 hover:text-foreground",
+                )}
+              >
+                {category}
+              </button>
+            );
+          })}
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {products.map((product) => (
+          {filteredProducts.map((product) => (
             <a
               key={product.name}
               href={product.url}
