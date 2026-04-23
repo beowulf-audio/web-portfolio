@@ -90,7 +90,7 @@ const products: Product[] = [
   {
     name: "Stemmy",
     description:
-      "AI audio stem separator standalone app for macOS. Drop any song and get isolated vocals, drums, bass, guitar, piano, and more — powered by Demucs with Metal GPU acceleration. Built-in multitrack mixer with per-channel EQ, pan, solo, mute. 100% offline, no account, no subscription. Apple Silicon only.",
+      "AI audio stem separator standalone app for macOS. Drop any song and get isolated vocals, drums, bass, guitar, piano, and more — powered by Demucs with Metal GPU acceleration. Built-in multitrack mixer with per-channel EQ, pan, solo, mute. 100% offline, no account, no subscription. Universal binary — Apple Silicon and Intel.",
     image: stemmyThumb,
     tags: ["Stem Separator", "AI", "macOS", "Standalone"],
     url: "https://beowulfaudio.gumroad.com/l/stemmy",
