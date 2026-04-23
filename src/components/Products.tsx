@@ -68,7 +68,7 @@ const products: Product[] = [
   {
     name: "Voce",
     description:
-      "A diatonic MIDI chord generator built around the Nashville Number System. Seven scale-degree buttons (I–VII) trigger in-key chords in any of 16 scales and all 12 keys. Features root/1st/2nd inversions, host-synced gate timing from 1/64 to 8 bars, latch mode, and full parameter automation. Inspired by the HICHORD pocket synth.",
+      "A diatonic MIDI chord generator built around the Nashville Number System. Seven scale-degree buttons (I–VII) trigger in-key chords in any of 16 scales and all 12 keys. Features root/1st/2nd inversions, host-synced gate timing from 1/64 to 8 bars, latch mode, and full parameter automation.",
     image: voceThumb,
     tags: ["MIDI", "Generator", "VST3", "AU"],
     url: "https://beowulfaudio.gumroad.com/l/voce",
