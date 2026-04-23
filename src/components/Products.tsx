@@ -108,7 +108,7 @@ const products: Product[] = [
     url: "https://github.com/beowulf-audio/ambient-gen-tui",
     price: "Open Source",
     source: "github",
-    category: "MIDI",
+    category: "Utilities",
   },
 ];
 
