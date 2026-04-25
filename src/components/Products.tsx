@@ -91,9 +91,9 @@ const products: Product[] = [
   {
     name: "Lens",
     description:
-      "A camera-driven polyphonic subtractive synthesizer with hand-gesture control. Your webcam becomes a second performer — brightness, motion, color, and where you are in frame shape the cutoff, drive, chorus, and stereo image. Pinch your fingers to narrow the sound; open your palm to bloom it. 25 factory presets across 6 banks, save your own. Powered by Apple's Vision framework.",
+      "A camera-driven polyphonic subtractive synthesizer with hand-gesture control. macOS only. Your webcam becomes a second performer — brightness, motion, color, and where you are in frame shape the cutoff, drive, chorus, and stereo image. Pinch your fingers to narrow the sound; open your palm to bloom it. 25 factory presets across 6 banks, save your own. Powered by Apple's Vision framework.",
     image: lensThumb,
-    tags: ["Synth", "Camera", "Gestures", "VST3", "AU"],
+    tags: ["Synth", "Camera", "Gestures", "VST3", "AU", "macOS only"],
     url: "https://beowulfaudio.gumroad.com/l/lens",
     price: "Paid",
     source: "gumroad",
