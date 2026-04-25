@@ -4,6 +4,7 @@ import poleFilterThumb from "@/assets/store-thumb-2.jpg";
 import skaldThumb from "@/assets/skald-thumb.png";
 import voceThumb from "@/assets/voce-thumb.png";
 import romplerThumb from "@/assets/rompler-thumb.png";
+import lensThumb from "@/assets/lens-thumb.png";
 import ambientgenThumb from "@/assets/ambientgen-thumb.png";
 import stemmyThumb from "@/assets/stemmy-thumb.png";
 import { ExternalLink, Github } from "lucide-react";
@@ -84,6 +85,17 @@ const products: Product[] = [
     tags: ["Sampler", "Rompler", "VST3", "AU"],
     url: "https://beowulfaudio.gumroad.com/l/rompler",
     price: "Free",
+    source: "gumroad",
+    category: "Instruments",
+  },
+  {
+    name: "Lens",
+    description:
+      "A camera-driven polyphonic subtractive synthesizer with hand-gesture control. Your webcam becomes a second performer — brightness, motion, color, and where you are in frame shape the cutoff, drive, chorus, and stereo image. Pinch your fingers to narrow the sound; open your palm to bloom it. 25 factory presets across 6 banks, save your own. Powered by Apple's Vision framework.",
+    image: lensThumb,
+    tags: ["Synth", "Camera", "Gestures", "VST3", "AU"],
+    url: "https://beowulfaudio.gumroad.com/l/lens",
+    price: "Paid",
     source: "gumroad",
     category: "Instruments",
   },
