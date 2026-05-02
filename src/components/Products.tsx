@@ -7,6 +7,8 @@ import romplerThumb from "@/assets/rompler-thumb.png";
 import lensThumb from "@/assets/lens-thumb.png";
 import ambientgenThumb from "@/assets/ambientgen-thumb.png";
 import stemmyThumb from "@/assets/stemmy-thumb.png";
+import keymasterThumb from "@/assets/keymaster-thumb.png";
+import tracksetThumb from "@/assets/trackset-thumb.png";
 import { ExternalLink, Github } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -107,6 +109,28 @@ const products: Product[] = [
     tags: ["Stem Separator", "AI", "macOS", "Standalone"],
     url: "https://beowulfaudio.gumroad.com/l/stemmy",
     price: "Paid",
+    source: "gumroad",
+    category: "Utilities",
+  },
+  {
+    name: "Keymaster",
+    description:
+      "Open-source DJ tool for analyzing audio libraries. Drop a folder of MP3/WAV/FLAC and get BPM, musical key (Camelot), energy 1–10, ReplayGain, and structurally-aware hot cue points placed at drops, breakdowns, and builds. Camelot wheel for harmonic mixing, multi-column filters, and tag/rename writeback to ID3, Vorbis, and MP4. Built on Essentia. macOS + Linux.",
+    image: keymasterThumb,
+    tags: ["DJ", "BPM", "Key Detection", "macOS", "Linux", "Standalone"],
+    url: "https://beowulfaudio.gumroad.com/l/keymaster",
+    price: "Free",
+    source: "gumroad",
+    category: "Utilities",
+  },
+  {
+    name: "Trackset",
+    description:
+      "Compile a folder of MP3s into a single long-form MP4 with cover art, slideshow or collage modes, blurred backgrounds, and YouTube chapter markers. Built for full-album YouTube uploads. The render pipeline uses still-image encoding tricks so a 60-minute album finishes in ~15 seconds, not an hour. Bundled ffmpeg, no system install. macOS + Linux.",
+    image: tracksetThumb,
+    tags: ["Video", "YouTube", "FFmpeg", "macOS", "Linux", "Standalone"],
+    url: "https://beowulfaudio.gumroad.com/l/trackset",
+    price: "Free",
     source: "gumroad",
     category: "Utilities",
   },
