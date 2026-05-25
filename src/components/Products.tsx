@@ -5,6 +5,7 @@ import skaldThumb from "@/assets/skald-thumb.png";
 import voceThumb from "@/assets/voce-thumb.png";
 import romplerThumb from "@/assets/rompler-thumb.png";
 import lensThumb from "@/assets/lens-thumb.png";
+import driftwoodThumb from "@/assets/driftwood-thumb.png";
 import ambientgenThumb from "@/assets/ambientgen-thumb.png";
 import stemmyThumb from "@/assets/stemmy-thumb.png";
 import keymasterThumb from "@/assets/keymaster-thumb.png";
@@ -53,6 +54,17 @@ const products: Product[] = [
     image: poleFilterThumb,
     tags: ["Filter", "VST3", "AU"],
     url: "https://beowulfaudio.gumroad.com/l/pole",
+    price: "Free",
+    source: "gumroad",
+    category: "Effects",
+  },
+  {
+    name: "Driftwood",
+    description:
+      "A lo-fi cassette and VHS modulation effect. A random-staircase-modulated bucket-brigade delay creates a drunken pitch warble, shaped by an envelope-driven low-pass gate that opens as you play harder. Add tape aging — wow & flutter, dropouts, head bump, and hiss — for worn-cassette character. Four built-in visualizers (spectrogram, oscilloscope, vectorscope, scrolling waveform) you can click to cycle. VST3/AU/Standalone, built with JUCE.",
+    image: driftwoodThumb,
+    tags: ["Modulation", "Lo-fi", "Tape", "VST3", "AU"],
+    url: "https://beowulfaudio.gumroad.com/l/driftwood",
     price: "Free",
     source: "gumroad",
     category: "Effects",
