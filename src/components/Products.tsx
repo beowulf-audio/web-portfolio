@@ -1,5 +1,6 @@
 import { useState } from "react";
 import oculoThumb from "@/assets/oculo-thumb.jpg";
+import lumenThumb from "@/assets/lumen-thumb.png";
 import poleFilterThumb from "@/assets/store-thumb-2.jpg";
 import skaldThumb from "@/assets/skald-thumb.png";
 import voceThumb from "@/assets/voce-thumb.png";
@@ -36,6 +37,17 @@ const CATEGORIES: readonly ("All" | Category)[] = [
 ] as const;
 
 const products: Product[] = [
+  {
+    name: "Lumen",
+    description:
+      "A LUFS loudness meter that helps you land your track on a target level. Pick a preset (Spotify, Apple Music, YouTube, EBU R128, CD, vinyl, club), play the track through, and watch the target ring lock green when you hit the mark. Full EBU R128 metering: integrated, momentary and short-term loudness, loudness range, and true peak with latching over-lamps, plus a scrolling loudness history. Bit-identical passthrough, it never touches your audio. VST3/AU/Standalone, built with JUCE.",
+    image: lumenThumb,
+    tags: ["Meter", "LUFS", "Mastering", "VST3", "AU"],
+    url: "https://beowulfaudio.gumroad.com/l/lumen",
+    price: "Free",
+    source: "gumroad",
+    category: "Utilities",
+  },
   {
     name: "Oculo",
     description:
